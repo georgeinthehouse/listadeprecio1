@@ -122,7 +122,7 @@ const NewTask = () => {
         </header>
         <input
           type="text"
-          placeholder="Nombre del Producto"
+          placeholder="Nombre del producto"
           name="title"
           onChange={handleChange}
           value={newTask.title}
@@ -131,8 +131,8 @@ const NewTask = () => {
         />
 
         <textarea
-          name="precio del Producto"
-          placeholder="Task description"
+          name="description"
+          placeholder="Precio del Producto"
           onChange={handleChange}
           value={newTask.description}
           className="bg-gray-800 border-2 w-full p-4 rounded-lg my-4"
