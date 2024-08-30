@@ -140,7 +140,7 @@ const NewTask = () => {
         ></textarea>
 
         <button className="bg-green-600 text-white font-semibold px-8 py-2 rounded-lg">
-          {params.id ? "Update" : "Save"}
+          {params.id ? "Actualizar" : "Guardar"}
         </button>
       </form>
     </div>
