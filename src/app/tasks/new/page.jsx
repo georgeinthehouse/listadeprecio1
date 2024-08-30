@@ -109,14 +109,14 @@ const NewTask = () => {
       <form onSubmit={handleSubmit}>
         <header className="flex justify-between">
           <h1 className="font-bold text-3xl">
-            {!params.id ? "Create Task" : "Update task"}
+            {!params.id ? "Crear Producto" : "Actualizar Producto"}
           </h1>
           {params.id && (
             <button
               className="bg-red-500 px-3 py-1 rounded-md"
               onClick={handleDelete}
             >
-              Delete
+              Borrar
             </button>
           )}
         </header>
