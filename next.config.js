@@ -1,5 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  version: 2,
+  builds: [
+    {
+      src: "./src/app/page.jsx",
+      use: "@vercel/node",
+    },
+  ],
   headers: [
     {
       source: "/api/(.*)",
