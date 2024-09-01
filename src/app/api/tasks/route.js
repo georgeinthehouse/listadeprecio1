@@ -1,5 +1,6 @@
 import Task from "@/models/Task";
 import { dbConnect } from "@/utils/mongoose";
+import { headers } from "next/dist/client/components/headers";
 import { NextResponse } from "next/server";
 
 export async function GET() {
@@ -15,8 +16,12 @@ export async function POST(request) {
     const savedTask = await newTask.save();
     return NextResponse.json(savedTask);
   } catch (error) {
-    return NextResponse.json(error.message, {
-      status: 400,
-    });
+    return NextResponse.json(
+      error.message,
+      {
+        status: 400,
+      },
+      { headers: { "Access-Control-Allow-Origin": "*" } }
+    );
   }
 }
